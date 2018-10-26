@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/main.css">
+    <link href="https://file.myfontastic.com/JBgmcmo6gmg8t5u5oJSqdC/icons.css" rel="stylesheet">
+    <title>LabCar</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm p-3 mb-2 bg-white text-dark">
+        <div class="container">
+          <img src="images/logoForma.png" href="#LabCar">
+          <button class="navbar-toggler bg-warning navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#conduce">Viaja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#viaja">Conduce</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-dark" href="#" data-toggle="modal" data-target="#modalLoginForm">Inicia Sesión</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+           <div class="modal-header text-center">
+              <h4 class="modal-title w-100"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" alt="avatar" class="rounded-circle img-responsive"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="sm-form mb-5">
+              <i class="icon-user"></i>
+              <input type="email" id="defaultForm-email" class="form-control validate" placeholder="Username">
+            </div>
+            <div class="sm-form mb-4">
+              <i class="icon-lock"></i>
+              <input type="password" id="defaultForm-pass" class="form-control validate" placeholder="Password">
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-warning">Loging</button>
+          </div>
+          <a class="dropdown-item" href="#">Forgot password?</a>
+        </div>
+       </div>
+    </div>
+    <section class="register d-flex justify-content-end align-items-center">
+      <div class="inscription  d-flex justify-content-around flex-column p-3 text-white">
+        <div class="d-sm-block d-md-none">
+          <div>
+           <h1>Comianza a viajar con<h1>
+           <img class="logo-labcar ml-2" src="images/logoBlanco.png" width="60vw" height="20vh">
+         </div>
+          <input class="btn btn-light"type="button" value="Descarga el app">
+        </div>
+        <div class="d-md-block d-none">
+          <h2>Disfruta del viaje<br>
+            Eres dueño de tu tiempo</h2>
+          <div class="d-flex">
+            <p>Viaja con</p>
+            <img class="logo-labcar ml-2" src="images/logoBlanco.png" width="60vw" height="20vh">
+          </div>
+      <a class="btn btn-light" href="#registrate" data-toggle="modal" data-target="#orangeModalSubscription">Registrate</a>
+      <div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">          <div class="modal-dialog modal-notify modal-warning" role="document">
+          <div class="modal-content form-color">
+            <div class="modal-header text-center">
+              <h4 class="modal-title white-text bg-dark w-100 font-weight-bold py-2">Ya tienes una conta?</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">&times;</span>                </button>
+            </div>
+            <h4 class="text-center modal-title w-100 py-2">O CREA UNA CUENTA NUEVA</h4>
+            <div class="modal-body">
+              <div class="form-row md-form mb-1">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Apelido">
+                </div>
+                </div>
+                <div class="form-group mb-1">
+                  <input type="email" class="form-control" placeholder="Correo Electronico: ejemplo@correo.mx">
+                </div>
+                <div class="form-group mb-1">
+                  <input type="text" class="form-control" placeholder="Telefono">
+                </div>
+                <div class="form-group mb-1">
+                  <input type="text" class="form-control" placeholder="Contrasena">
+                </div>
+                <div class="form-group mb-1">
+                  <input type="text" class="form-control" placeholder="Ciudad">
+                </div>
+                <div class="form-group mb-1">
+                  <input type="text" class="form-control" placeholder="(Opcional) codigo de invitacion">
+                </div>
+                <div class="form-group mb-1">
+                  <input type="button" class="form-control btn-light" value="Como te enteraste de nosostros?">
+                </div>
+                <div class="form-group mb-1">
+                  <input type="button" class="form-control btn-form text-white" value="Enviar">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex text-white">
+          <hr>
+          <p>O Bien</p>
+          <hr>
+        </div>
+        <a class="btn btn-light" href="#registrate" data-toggle="modal" data-target="#conductor">Conviertete en conductor</a>
+        <div class="modal fade" id="conductor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-notify modal-warning" role="document">
+            <div class="modal-content form-color">
+              <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group mb-1">
+                  <label>Tienes vehiculo de 4 puertas?</label>
+                  <input type="text" class="form-control" placeholder="Si">
+                </div>
+                <div class="form-group mb-1">
+                  <label>Elige la marca del vehiculo</label>
+                  <input type="text" class="form-control" placeholder="Marca">
+                  <p> No ves tu vehiculo en la lista? Envia un correo electronico a</p>
+                  <a>sociosmdv@uber.com</a>
+                </div>
+                <div class="form-group mb-1">
+                  <label>Modelo</label>
+                  <input type="text" class="form-control" placeholder="Modelo1">
+                </div>
+                <div class="form-group mb-1">
+                  <label>Año</label>
+                  <input type="text" class="form-control" placeholder="2017">
+                </div>
+                <div class="form-group mb-1">
+                  <label>Numero de la matriculo</label>
+                  <input type="text" class="form-control" placeholder="Numero de la matricula">
+                  <p>La information de la matricula ayuda a los clientes a identificar tu veiculo.
+                </div>
+                <div class="form-group mb-1">
+                  <input type="button" class="form-control btn-form text-white" value="Enviar">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="new-app d-flex justify-content-start align-items-center">
+      <div class="line d-flex justify-content-center align-items-center bl-0">
+        <div class="cell-phone">
+          <h1 class="d-sm-block d-md-none text-white">La nueva app</h1>
+          <img class="img-fluid" src="images/iPhone6Plus.png">
+          <h4 class="d-sm-block d-md-none text-white">Llega aún destino más rápido</h4>
+        </div>
+        <div class="text-app text-white flex-column d-md-block d-none">
+          <h2>Descarga la nueva app</h2>
+          <p>La version actualizada está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+          <p> Con solo tocar un bottón, un auto llega justo a tu ubicación. Súbete y no te preocupes tu conductor sabe exactamente a donde ir.</p>
+        </div>
+      </div>
+    </section>
+    <section class="conductor d-flex justify-content-end">
+      <div class="message-conductor bg-dark p-4">
+        <h3>Conduce cuando quieras</h3>
+        <p> LabCar és una opción flexible para alcanzar tus metas financieras.</p>
+        <a class="btn btn-warning text-white" href="#registrate" data-toggle="modal" data-target="#conductor">Conviertete en conductor</a>
+        <div class="modal fade" id="conductor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-notify modal-warning" role="document">
+            <div class="modal-content form-color">
+              <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group mb-1">
+                  <label>Tienes vehiculo de 4 puertas?</label>
+                  <input type="text" class="form-control" placeholder="Si">
+                </div>
+                <div class="form-group mb-1">
+                  <label>Elige la marca del vehiculo</label>
+                  <input type="text" class="form-control" placeholder="Marca">
+                  <p> No ves tu vehiculo en la lista? Envia un correo electronico a</p>
+                  <a class="font-italic">sociosmdv@uber.com</a>
+                <div class="form-group mb-1">
+                  <label>Modelo</label>
+                  <input type="text" class="form-control" placeholder="Modelo1">
+                </div>
+                <div class="form-group mb-1">
+                  <label>Año</label>
+                  <input type="text" class="form-control" placeholder="2017">
+                </div>
+                <div class="form-group mb-1">
+                  <label>Numero de la matriculo</label>
+                  <input type="text" class="form-control" placeholder="Numero de la matricula">
+                  <p>La information de la matricula ayuda a los clientes a identificar tu veiculo.
+                </div>
+                <div class="form-group mb-1">
+                  <input type="button" class="form-control btn-form text-white" value="Enviar">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tarifas d-flex justify-content-around">
+      <div>
+        <h3 class="title-tarifas">Tarifas</h3>
+        <h4 class="text-tarifas">Consulta las tarifas LabCar aqui</h4>
+        <div>
+          <img class="shape" src="images/shape.png">
+          <input class="partida"type="text" placeholder="Ingrese su punto de partida"></br>
+          <img class="shape-two" src="images/shape2.png">
+          <input class="destino"type="text" placeholder="Ingrese su destino"></br>
+          <input class="send" type="button" value="Trazar ruta!"></br>
+        </div>
+      </div>
+      <div id="map">
+        <!-- <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:48vh;width:50vw;'><div id='gmap_canvas' style='height:50vh;width:50vw;'></div><div><small><a href="https://embedgooglemaps.com/fr/">https://embedgooglemaps.com/fr/</a></small></div><div><small><a href="https://sparpedia.no/">http://sparpedia.no/</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(-23.5577103,-46.662396),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-23.5577103,-46.662396)});infowindow = new google.maps.InfoWindow({content:'<strong>PROJETO LABCAR</strong><br>Alameda Santos, 2356 - Jardim Paulista, São Paulo - SP, 01419-002<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script> -->
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row title-footer">
+          <div class="col-md-3">
+            <img src="images/logoBlanco.png">
+          </div>
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+          </div>
+        </div>
+        <div class="row words">
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+            <ul class="list-unstyled">
+              <li>Viaja</li>
+              <li>Conduce</li>
+              <li>Ciudades</li>
+              <li>Ciudades</li>
+              <li>Entregas</li>
+              <li>Cômo funciona?</li>
+              <li>Paises</li>
+              <li>Seguridad</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-unstyled">
+              <li class="d-sm-block d-none">Oportunidades</li>
+              <li class="d-sm-block d-none">Nuestra historia</li>
+              <li class="d-sm-block d-none">API de LabCar</li>
+              <li class="d-sm-block d-none">Eventos</li>
+              <li class="d-sm-block d-none">Desarroladores</li>
+              <li class="d-sm-block d-none">Servicios</li>
+              <li class="d-sm-block d-none">Laboratoria</li>
+              <li class="d-sm-block d-none">Coders</li>
+            </ul>
+          </div>
+          <div class="col-md-3 images-app">
+            <img class="img-fluid mb-3" src="images/appstore.png">
+            <img class="img-fluid" src="images/enBadgeWebGeneric.png">
+          </div>
+        </div>
+        <div class="row title-footer mb-3">
+          <div class="col-md-3">
+            <i class="icon-facebook"></i>
+            <i class="icon-twitter"></i>
+            <i class="icon-linkedin"></i>
+            <i class="icon-social-apple"></i>
+            <i class="icon-caret-right"></i>
+          </div>
+        </div>
+        <div class="row">
+          <p>&copy; 2017 LabCar Tecnologies Inc.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD3KLWaxfSQ685whD8pv8TD2j4fadkCWw&callback=initMap">
+    </script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
