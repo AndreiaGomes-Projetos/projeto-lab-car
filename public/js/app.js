@@ -1,32 +1,19 @@
-var map, infoWindow;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'),
-    {center: {lat: -34.397, lng: 150.644},
-     zoom: 6
-    });
-    infoWindow = new google.maps.InfoWindow;
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-      infoWindow.setPosition(pos);
-      infoWindow.setContent('Location found.');
-      infoWindow.open(map);
-      map.setCenter(pos);
-      },function() {
-      handleLocationError(true, infoWindow, map.getCenter());
-      });
-    } else {
-      handleLocationError(false, infoWindow, map.getCenter());
-    }
-  }
-
-  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    infoWindow.setPosition(pos);
-    infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-    infoWindow.open(map);
-  }
+function moveMapToSP(map){
+  map.setCenter({lat:-23.5505, lng:-46.6333});
+  map.setZoom(13);
+}
+const platform = new H.service.Platform({
+  app_id: 'devportal-demo-20180625',
+  app_code: '9v2BkviRwi9Ot26kp2IysQ',
+  useHTTPS: true
+});
+const pixelRatio = window.devicePixelRatio || 1;
+const defaultLayers = platform.createDefaultLayers({
+  tileSize: pixelRatio === 1 ? 256 : 512,
+  ppi: pixelRatio === 1 ? undefined : 320
+});
+const map = new H.Map(document.getElementById('map'),
+  defaultLayers.normal.map, {pixelRatio: pixelRatio});
+const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+const ui = H.ui.UI.createDefault(map, defaultLayers);
+moveMapToSP(map);
